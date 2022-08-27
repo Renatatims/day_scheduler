@@ -4,14 +4,7 @@ body {
   line-height: 1;
 }
 
-.textarea {
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
+/*Jumbotron - Title and Date*/
 
 .jumbotron {
   text-align: center;
@@ -30,17 +23,34 @@ body {
   border-radius: 15px;
 }
 
+/*Row hour and user's input*/
+
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
 }
 
+/*Hour column*/
+
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  text-align: end;
 }
+
+/*User's input Events*/
+
+.textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+  border-top: 1px solid white;
+ }
 
 .past {
   background-color: #d3d3d3;
@@ -57,11 +67,14 @@ body {
   color: white;
 }
 
+/*Save Button - Floppy Disk*/
+
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
+  border-top: 1px solid white;
   color: white;
   cursor:pointer;
 }
@@ -72,21 +85,11 @@ body {
 
 }
 
-
 .fa-solid {
   display:flex;
   justify-content: center;
  
-
 }
-/*input{
-  background: transparent;
-  border: none;
-  width:98%;
-  border-color: transparent;
-   
-}
-
 
 
 

@@ -18,13 +18,13 @@ function colorCode() {
         var textarea = $(this).siblings("input.textarea");
         //Color Red if the row corresponds to the current hour
         if (toNumber == currentHour) {
-            textarea.css('background-color', "red")
+            textarea.addClass('present');
         //Color Grey if the row corresponds to past hours
         } else if (toNumber < currentHour) {
-            textarea.css('background-color', "grey")
+            textarea.addClass('past');
         //Color Green if the row corresponds to future hours
         } else {
-            textarea.css('background-color', "green")
+            textarea.addClass('future')
         }
         console.log(toNumber);
     })
@@ -36,7 +36,7 @@ colorCode();
 
 // Event Listener to Floppy Disk//
 
-// Click save button - Saved in local storage//
+// Click Save Button - Saved in local storage//
 
 var floppySave = $(".saveBtn");
 
