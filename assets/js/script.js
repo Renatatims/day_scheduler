@@ -9,16 +9,14 @@ $("#currentDay").text(currentDayEl);
 
 var timeHour = $('.hour');
 
-var currentHour = moment().format("H");
+var currentHour = moment().format("HH");
 
 
 function colorCode (){
-
-var toNumber = parseInt($(".hour").attr("datetime"));
-
-var textarea = $(".textarea");
-
-if(toNumber === currentHour){
+$('.hour').each(function(){
+    var toNumber = parseInt($(this).data('time'));
+    var textarea = $(this).siblings("td.textarea");
+if(toNumber == currentHour){
     textarea.css('background-color',"red")
 } else if (toNumber < currentHour){
     textarea.css('background-color',"grey") 
@@ -26,23 +24,33 @@ if(toNumber === currentHour){
     textarea.css('background-color',"green") 
 }
 console.log(toNumber);
-} 
+})
 
+};
 
 colorCode();
 
 
-// Click into a timeblock - User input an event//
-// create an input - append - user inpunt
+//User input and hour variables//
 
+var hour = $(this).siblings("th.hour").data("time");
+var input = $(this).siblings("td.textarea").children().val();
 
-/*
-var eventRow = $('textarea').
+// Save User Input - save user input to local storage
 
-*/
+function saveEvent(){
+    localStorage.setItem(hour,input);
+};
 
+// Event Listener to Floppy Disk - calling the function to save//
 // Click save button - Saved in local storage//
-//save user input to local storage
+
+var floppySave = $(".saveBtn");
+
+floppySave.on("click", function(event){
+    event.preventDefault();
+    saveEvent();    
+});
 
 // Refresh the page - events persist//
 
