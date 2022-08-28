@@ -3,14 +3,19 @@
 ## Description:
 This application consists of a Day Scheduler that enables the user to save events on each business-hour of the day.
 
-## Features:
+## Preview:
+
+![Preview](./assets/screenshots/Preview.PNG)
+
+# Features:
 
 1. Current Date displayed on top of the calendar.
 2. Time-blocks for standard business hours.
 3. Save button - enables user to save the event to the local storage 
 4. Once the page is refreshed then the events persist in the hourly-calendar
 
-## JavaScript
+
+# JavaScript
 
 ## Color Coded Hours:
 
@@ -26,3 +31,7 @@ This application consists of a Day Scheduler that enables the user to save event
 - Function init : get's the information from the local storage
 
 # Link to application:
+
+# Sources:
+https://getbootstrap.com/docs/5.2/layout/grid/
+

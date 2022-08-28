@@ -42,7 +42,7 @@ body {
 
 /*User's input Events*/
 
-.textarea {
+textarea {
   background: transparent;
   border: none;
   resize: none;
