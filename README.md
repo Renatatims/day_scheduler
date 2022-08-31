@@ -56,7 +56,7 @@ function colorCode() {
 
 # Link to application:
 
-https://renatatims.github.io/weather_dashboard/
+https://renatatims.github.io/day_scheduler/
 
 
 # Sources:
