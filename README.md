@@ -20,9 +20,9 @@ This application consists of a business-hour Day Scheduler. The user is able to 
 ## Color Coded Hours:
 
 - Function Color Code to identify the current, past and future hours:
-    - Color Red: if the row corresponds to the current hour
-    - Color Grey if the row corresponds to past hours
-    - Color Green if the row corresponds to future hours
+    - Color Red: if the row corresponds to the current hour.
+    - Color Grey: if the row corresponds to past hours.
+    - Color Green: if the row corresponds to future hours.
 
 ````java
 function colorCode() {
@@ -47,11 +47,17 @@ function colorCode() {
 
 ## Event Listener:
 
-- Click event applied to the floppy disk, so the event is saved in the local storage.
+- Click event applied to the floppy disk - once the user clicks over the floppy disk, the event is saved in the local storage.
 
 - Function "init" : get's the information from the local storage, for each hour. So once the user clicks on the save button, the event will persist in the time-block even when the page is refreshed. 
 
+
+![Preview](./assets/screenshots/preview.gif)
+
 # Link to application:
+
+https://renatatims.github.io/weather_dashboard/
+
 
 # Sources:
 https://getbootstrap.com/docs/5.2/layout/grid/
