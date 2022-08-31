@@ -60,7 +60,7 @@ https://renatatims.github.io/weather_dashboard/
 
 
 # Sources:
-https://getbootstrap.com/docs/5.2/layout/grid/
-https://momentjs.com/
-https://api.jquery.com/each/
+- https://getbootstrap.com/docs/5.2/layout/grid/
+- https://momentjs.com/
+- https://api.jquery.com/each/
 
